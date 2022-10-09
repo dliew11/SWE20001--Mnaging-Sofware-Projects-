@@ -1,1 +1,1 @@
-# SWE20001--Mnaging-Sofware-Projects-
+# SWE20001--Managing-Sofware-Projects-
