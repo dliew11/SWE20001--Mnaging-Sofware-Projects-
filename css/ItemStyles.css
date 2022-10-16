@@ -1,0 +1,20 @@
+.ButtonPositive {
+	  width: 20px;
+	  height: 20px;
+	  font: 20px/0 Arial,sans-serif;
+	  border-radius: 50%;
+	  background-clip: padding-box;
+	  padding: 0px;
+	
+}
+
+.ButtonNegative {
+	width: 20px;
+	height: 20px;
+	font: 20px/0 Arial,sans-serif;
+	border-radius: 50%;
+	background-clip: padding-box;
+	padding: 0px;
+	padding-bottom: 2.7px;
+	
+}
