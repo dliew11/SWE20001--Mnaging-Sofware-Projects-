@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Users>
+	<User>
+		<UserID>1</UserID>
+		<Name>Anita williams</Name>
+		<Phone>042124317</Phone>
+		<Email>AnitaW@outlook.com</Email>
+		<Address>32 Pencil street </Address>
+		<Date>1/1/20</Date>
+	</User>
+	
+	<User>
+		<UserID>2</UserID>
+		<Name>Jennifer Wallet</Name>
+		<Phone>041231461</Phone>
+		<Email>JW@outlook.com</Email>
+		<Address>15 Chocolate street</Address>
+		<Date>2/2/20</Date>
+	</User>
+	<User>
+		<UserID>3</UserID>
+		<Name>Cupcake</Name>
+		<Phone>0416512431</Phone>
+		<Email>Pencil@outlook.com</Email>
+		<Address>30 Hashtag street</Address>
+		<Date>4/5/20</Date>
+	</User>
+	<User>
+		<UserID>4</UserID>
+		<Name>Lorence oliver</Name>
+		<Phone>0421364721</Phone>
+		<Email>Loliver@outlook.com</Email>
+		<Address>20 Smith Street</Address>
+		<Date>5/5/20</Date>
+	</User>
+	<User>
+		<UserID>5</UserID>
+		<Name>Dummy</Name>
+		<Phone>0412312</Phone>
+		<Email>Dummydata@outlook.com</Email>
+		<Address>59 Lorem ipsum avenue </Address>
+		<Date>8/7/20</Date>
+	</User>
+</Users>
