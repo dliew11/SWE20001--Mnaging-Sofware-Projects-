@@ -40,7 +40,7 @@
 
 <body>
 
-<header class="p-3 bg-dark text-white">
+<header class="p-3 bg-primary text-white">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -48,7 +48,7 @@
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="index.php" class="nav-link px-2 text-secondary">Home</a></li>
+          <li><a href="index.php" class="nav-link px-2 text-white">Home</a></li>
           <li><a href="products.php" class="nav-link px-2 text-white">Products</a></li>
           <li><a href="orders.php" class="nav-link px-2 text-white">Order</a></li>
           <li><a href="users.php" class="nav-link px-2 text-white">Users</a></li>
@@ -132,44 +132,7 @@
 					}
 
 				?>
-				<!--
-					<tr>
-						<td>1</td>
-						<td>Johm smith</td>
-						<td>0412364874</td>
-						<td>Johnsmith@outlook.com</td>
-						<td>3/3/2022</td>
-						<td> <button  class="btn btn-warning"> <i class="fa fa-pencil fa-lg"></i></button></td>
-						<td> <button  class="btn btn-warning"> <i class="fa fa-trash-o fa-lg"></i></button></td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>Stephanie hall</td>
-						<td>04212632</td>
-						<td>Stephaniehall@outlook.com</td>
-						<td>4/5/2022</td>
-						<td> <button  class="btn btn-warning"> <i class="fa fa-pencil fa-lg"></i></button></td>
-						<td> <button  class="btn btn-warning"> <i class="fa fa-trash-o fa-lg"></i></button></td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>Anita win</td>
-						<td>04312312489</td>
-						<td>AnitaWin@outlook.com</td>
-						<td>8/5/2022</td>
-						<td> <button  class="btn btn-warning"> <i class="fa fa-pencil fa-lg"></i></button></td>
-						<td> <button  class="btn btn-warning"> <i class="fa fa-trash-o fa-lg"></i></button></td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>Josey hall</td>
-						<td>04368721</td>
-						<td>ZoomZoom@outlook.com</td>
-						<td>10/5/2022</td>
-						<td> <button  class="btn btn-warning"> <i class="fa fa-pencil fa-lg"></i></button></td>
-						<td> <button  class="btn btn-warning"> <i class="fa fa-trash-o fa-lg"></i></button></td>
-					</tr>
-					-->
+				
 				</tbody>
 			</table>
 		</div>

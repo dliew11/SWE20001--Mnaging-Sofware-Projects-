@@ -22,13 +22,7 @@
         </ul>
 
 
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-          <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
-        </form>
-  
-        <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">Search</button>
-        </div>
+        
       </div>
     </div>
   </header>
@@ -62,7 +56,7 @@
 
 	<div class="form-group col-md-4">
       <label for="home_address">Address</label>
-      <input type="text" name = "address" class="form-control" id="home_address" placeholder="Enter Email Address">
+      <input type="text" name = "address" class="form-control" id="home_address" placeholder="Enter Home Address">
     </div>
 
   </div>

@@ -95,13 +95,7 @@
           <li><a href="users.php" class="nav-link px-2 text-white">Users</a></li>
         </ul>
 
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-          <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
-        </form>
-
-        <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">Search</button>
-        </div>
+        
       </div>
     </div>
   </header>
@@ -192,14 +186,7 @@
               </tbody>
             </table>
           </div>
-          <div class="row g-3 border-top">
-            <div class="col-sm-6" style="padding-top: 5%;">
-              <h3>TOTAL (AUD)</h3>
-            </div>
-            <div class="col-sm-6 text-right" style="padding-top: 5%;">
-              <h3 style="padding-right:8%">$11.5</h3>
-            </div>
-          </div>
+          
         </div>
         <div class="col-md-6"></div>
         <div class="row g-3 col-md-6" style="padding: 5% 3%;">
@@ -207,7 +194,7 @@
             <input type="submit" name="submit" value="Confirm" class="btn btn-primary btn-lg"></input>
           </div>
           <div class="col-md-6" style="padding-left: 15%;">
-            <button type="button" class="btn btn-danger btn-lg" link="orders.php">Cancel</button>
+            <a href="orders.php"><button type="button" class="btn btn-danger btn-lg" >Cancel</button></a>
           </div>
         </div>
       </div>

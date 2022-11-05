@@ -23,7 +23,7 @@
 
 <body>
 
-	<header class="p-3 bg-dark text-white">
+	<header class="p-3 bg-primary text-white">
 		<div class="container">
 		  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 			<a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -31,7 +31,7 @@
 			</a>
 
 			<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-			  <li><a href="index.php" class="nav-link px-2 text-secondary">Home</a></li>
+			  <li><a href="index.php" class="nav-link px-2 text-white">Home</a></li>
 			  <li><a href="products.php" class="nav-link px-2 text-white">Products</a></li>
 			  <li><a href="orders.php" class="nav-link px-2 text-white">Order</a></li>
 			  <li><a href="users.php" class="nav-link px-2 text-white">Users</a></li>
@@ -48,6 +48,7 @@
 		<a type="button" class="btn btn-outline-primary" href="add-products.php">Add Products</a>
 	</div>
 	<div class="container" style="padding-top: 3%;">
+		<h3> Product Page <h3>
 		<div class="row">
 			<div class="col-8 ">
 				<table id="example" class="table table-striped" style="width:100%">
@@ -111,19 +112,6 @@
 	<form method = "post" class="container" style="padding-top: 3%" action = "export_products.php">
         <input type = "submit" name = "export" value = "Export CSV file" class="btn btn-outline-primary"/>
     </form>
-	<div class="container d-flex justify-content-center" style="padding-top: 3%;">
-		<nav aria-label="Page navigation example">
-			<ul class="pagination">
-			  <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-			  <li class="page-item"><a class="page-link" href="#">1</a></li>
-			  <li class="page-item"><a class="page-link" href="#">2</a></li>
-			  <li class="page-item"><a class="page-link" href="#">3</a></li>
-			  <li class="page-item"><a class="page-link" href="#">4</a></li>
-			  <li class="page-item"><a class="page-link" href="#">5</a></li>
-			  <li class="page-item"><a class="page-link" href="#">6</a></li>
-			  <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-			</ul>
-		  </nav>
-	</div>
+	
 
 </body>

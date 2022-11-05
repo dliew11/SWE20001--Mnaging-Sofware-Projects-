@@ -25,15 +25,19 @@
 			$result = mysqli_query($connect, $query) or die(mysqli_error($result));
             if ($result) {
                 echo "Successfully edited product";
-				header('Location: Products.php');
+				header('Location: products.php');
 			
             } else {
                 echo "Form unsuccessfully submitted";
+                header('Location: products.php');
             }
 
         } else {
             echo "All fields required";
 			echo $_POST["p_name"] . $_POST["p_price"] . $_POST["p_stock"] . $_POST["p_unit"] . $_POST["p_category"] . $_POST["p_expiry"];
         }
+    }
+    else(isset($_POST["cancel"])){
+        header('Location: products.php')
     }
 ?>

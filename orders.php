@@ -19,7 +19,7 @@
 
 <body>
 
-<header class="p-3 bg-dark text-white">
+<header class="p-3 bg-primary text-white">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -27,20 +27,14 @@
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="index.php" class="nav-link px-2 text-secondary">Home</a></li>
+          <li><a href="index.php" class="nav-link px-2 text-white">Home</a></li>
           <li><a href="products.php" class="nav-link px-2 text-white">Products</a></li>
           <li><a href="orders.php" class="nav-link px-2 text-white">Order</a></li>
           <li><a href="users.php" class="nav-link px-2 text-white">Users</a></li>
         </ul>
 
 
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-          <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
-        </form>
-
-        <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">Search</button>
-        </div>
+        
       </div>
     </div>
   </header>
@@ -49,10 +43,8 @@
 <div class="container">
 
 	<div class="row" style="padding-top:5%;">
-		<div class="col-md-2"> </div>
-		<div class="col-md-2">
-		<a type="button" class="btn btn-outline-primary" href="add-orders.php">Add Order</a>
-		</div>
+		<div class="col-md-2"><a type="button" class="btn btn-outline-primary" href="add-orders.php">Add Order</a></div>
+		
 	</div>
 
 	<div class="row" style="padding-top:1%;">
@@ -86,7 +78,7 @@
 					}
 					//echo "Connected successfully";
 
-					$sql = "SELECT OrderID, MemberID, OrderTime, OrderStatus FROM orders";
+					$sql = "SELECT OrderID, MemberID, OrderTime, OrderStatus, Active FROM orders";
 					$result = $conn->query($sql);
 
 
@@ -95,64 +87,20 @@
 					  // output data of each row
 					  while($row = $result->fetch_assoc())
 					  {
-
-						echo "<tr><td>" .$row["OrderID"]. "</td>" .
+						if($row["Active"] == 1)
+						{
+							echo "<tr><td>" .$row["OrderID"]. "</td>" .
 							 "<td>" . $row["MemberID"]. "</td>" .
 							 "<td>" .$row["OrderTime"]. "</td>" .
 							 "<td>" .$row["OrderStatus"]. "</td>" .
-							 "<td> <button  class='btn btn-warning'> <i class='fa fa-pencil fa-lg'></i></button></td>
-							 <td> <button  class='btn btn-warning'> <i class='fa fa-trash-o fa-lg'></i></button></td></tr>";
+							 "<td> <a  type ='button' class='btn btn-warning' href='edit-order.php?EditOrderID=" .$row["OrderID"]."'><i class='fa fa-pencil fa-lg'></i></button></td>
+								 <td> <a  type ='button' class='btn btn-warning' href='delete-order.php?EditOrderID=" .$row["OrderID"]." '> <i class='fa fa-trash-o fa-lg'></i></button></td></tr>";
+						}
 					  }
 					}
 
 					?>
-					<!--
-					<tr>
-						<td>1</td>
-						<td>5</td>
-						<td>$25.00</td>
-						<td>01/01/20</td>
-						<td>Paid</td>
-						<td>8 Honeyeater Crescent</td>
-						<td>LOREM</td>
-						<td> <button  class="btn btn-warning"> <i class="fa fa-pencil fa-lg"></i></button></td>
-						<td> <button  class="btn btn-warning"> <i class="fa fa-trash-o fa-lg"></i></button></td>
-					</tr>
 
-					<tr>
-						<td>2</td>
-						<td>10</td>
-						<td>$150.00</td>
-						<td>03/03/19</td>
-						<td>Waiting</td>
-						<td>15 Lincoln Drive</td>
-						<td>LOREM</td>
-						<td> <button  class="btn btn-warning"> <i class="fa fa-pencil fa-lg"></i></button></td>
-						<td> <button  class="btn btn-warning"> <i class="fa fa-trash-o fa-lg"></i></button></td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>3</td>
-						<td>$75.00</td>
-						<td>03/01/19</td>
-						<td>Delivered</td>
-						<td>23 Pacer Street</td>
-						<td>LOREM</td>
-						<td> <button  class="btn btn-warning"> <i class="fa fa-pencil fa-lg"></i></button></td>
-						<td> <button  class="btn btn-warning"> <i class="fa fa-trash-o fa-lg"></i></button></td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>9</td>
-						<td>$125.00</td>
-						<td>05/09/19</td>
-						<td>Fail</td>
-						<td>19 Hillside Court</td>
-						<td>LOREM</td>
-						<td> <button  class="btn btn-warning"> <i class="fa fa-pencil fa-lg"></i></button></td>
-						<td> <button  class="btn btn-warning"> <i class="fa fa-trash-o fa-lg"></i></button></td>
-					</tr>
--->
 				</tbody>
 			</table>
 		</div>
